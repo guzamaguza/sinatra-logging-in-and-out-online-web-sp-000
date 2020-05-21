@@ -1,7 +1,7 @@
 require 'sinatra/base'
 
 class Helpers
-  attr_accessor :balance, :username
+  #attr_accessor :balance, :username
 
   def self.current_user(session)
     @user = User.find_by_id(session[:user_id])
